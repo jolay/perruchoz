@@ -4304,7 +4304,7 @@ p.welcome-msg { margin: 0; line-height: 50px; text-align: center; display: inlin
 .tab_container .products-grid  .product-image { float:left; width:105px;}
 .tab_container .products-grid  .box-item { float: none; width:auto; margin-left:115px; text-align: left;}
 .tab_container .products-grid .item-inner { display: inline-block; border: 1px solid #fff; padding: 10px;}
-.tab_container .products-grid .item-inner:hover { border: 1px solid #74d3fb;}
+.tab_container .products-grid .item-inner:hover { border: 1px solid #74D580;}
 .tab_container .products-grid .product-name {
     margin: 0;
     width: 120px;
@@ -4388,9 +4388,9 @@ p.welcome-msg { margin: 0; line-height: 50px; text-align: center; display: inlin
 .megamenu-title {
     display: inline-block;
     width: 100%;
-    background: url("../images/bg-category.png") no-repeat 13px 20px #74d3fb;
+    background: url("../images/bg-category.png") no-repeat 13px 20px #74D580;
     padding: 0;
-    border-bottom: 3px solid #68bde1;
+    border-bottom: 3px solid #63B56D;
 }
 .megamenu-title h2 {
     display: inline-block;
@@ -4780,6 +4780,7 @@ ul.tabs li.active{
     .custom-block { margin: 0;}
 }
 @media (max-width: 985px) {
+    #logoPerruchoz { position: relative; top:0;}
     .header a.logo { text-align: center; margin: 0 0 20px 0;}
     .top-cart-wrapper { float: none; display: inline-block;}
     .header .header-box { text-align:center; float: none; margin: 20px 0 0;}
