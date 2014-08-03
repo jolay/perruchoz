@@ -1,0 +1,1717 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Customer Login</title>
+<meta name="description" content="Default Description" />
+<meta name="keywords" content="Magento, Varien, E-commerce" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
+<link rel="icon" href="http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/default/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/default/favicon.ico" type="image/x-icon" />
+<link media="all" href="http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/ma_sagitta/css/styles.css3.php?url=http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/ma_sagitta/" type="text/css" rel="stylesheet" />
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://www.plazathemes.com/demo/ma_sagitta/js/blank.html';
+    var BLANK_IMG = 'http://www.plazathemes.com/demo/ma_sagitta/js/spacer.gif';
+//]]>
+</script>
+
+
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/ma_sagitta/css/bootstrap.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/ma_sagitta/css/bootstrap-select.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/ma_sagitta/css/bootstrap-theme.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/base/default/css/widgets.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/ma_sagitta/magentothem/fancybox/jquery.fancybox.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/ma_sagitta/magentothem/ajaxcartsuper/ajax_cart_super.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/ma_sagitta/magentothem/css/ma.bestsellervertscroller.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/ma_sagitta/magentothem/css/ma.brandslider.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/ma_sagitta/magentothem/css/categorytabs.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/ma_sagitta/magentothem/css/categorytabsliders.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/ma_sagitta/magentothem/catlist/css/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/ma_sagitta/magentothem/css/custommenu.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/ma_sagitta/magentothem/imagerotator/effect.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/ma_sagitta/layerednavigationajax/jquery-ui.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/ma_sagitta/magentothem/css/ma.onsaleslider.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/ma_sagitta/magentothem/css/searchbycategory.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/ma_sagitta/magentothem/colortool/css/ma.cltool.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/ma_sagitta/magentothem/colortool/css/colorpicker.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/ma_sagitta/magentothem/css/ma.upsellslider.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/ma_sagitta/magentothem/css/leftvmegamenu.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/ma_sagitta/css/print.css" media="print" />
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/varien/js.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/varien/form.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/varien/menu.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/magentothem/ma.jq.slide.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/bootstrap/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/bootstrap/bootstrap.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/magentothem/jquery-ui.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/bootstrap/bootstrap-tooltip.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/magentothem/ma.mobilemenu.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/magentothem/ma.menu.effect.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/magentothem/backtotop.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/magentothem/likebox.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/magentothem/ajax_cart_super.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/magentothem/fancybox/jquery.fancybox.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/magentothem/ma.script.vert.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/magentothem/ma.bxslider.min.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/magentothem/custommenu/custommenu.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/magentothem/colortool/colorpicker.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/magentothem/colortool/jquery.cookie.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/mage/captcha.js"></script>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/ma_sagitta/css/styles-ie8.css" media="all" />
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/magentothem/html5shiv.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/magentothem/respond.min.js"></script>
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/ma_sagitta/css/styles-ie.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/js/lib/ds-sleight.js"></script>
+<script type="text/javascript" src="http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/base/default/js/ie6.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/demo/ma_sagitta';
+Mage.Cookies.domain   = '.www.plazathemes.com';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["HK","IE","MO","PA"];
+//]]>
+</script>
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate([]);
+        //]]></script>
+
+<!--<link rel="stylesheet" type="text/css" href="" media="screen" />-->
+
+    <link rel="stylesheet" type="text/css" href="http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/ma_sagitta/css/styles_yellow.css" media="screen" />
+
+
+</head>
+<body class=" customer-account-login">
+<div class="wrapper">
+    <div class="static-left">
+<div class="static-left-content">
+<div class="l-col facebook">
+<div class="box-left">
+<div class="l-text"><a href="https://www.facebook.com/magentothem">Find us on Facebook</a></div>
+</div>
+</div>
+<div class="l-col insta">
+<div class="box-left">
+<div class="l-text"><a href="http://instagram.com/">Find us on Instagram</a></div>
+</div>
+</div>
+<div class="l-col twitter">
+<div class="box-left">
+<div class="l-text"><a href="https://twitter.com/plazathemes">Find us on Twitter</a></div>
+</div>
+</div>
+<div class="l-col dribble">
+<div class="box-left">
+<div class="l-text"><a href="http://blog.dribbble.com/">Find us on Dribble</a></div>
+</div>
+</div>
+<div class="l-col pinterest">
+<div class="box-left">
+<div class="l-text"><a href="https://www.pinterest.com/">Find us on Pinterest</a></div>
+</div>
+</div>
+<div class="l-col google">
+<div class="box-left">
+<div class="l-text"><a href="https://plus.google.com">Find us on Google +</a></div>
+</div>
+</div>
+</div>
+</div>        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+    <div class="page">
+        
+<div class="header-container">
+    <div class="header-container-inner">
+    <div class="top-link">
+        <div class="container">
+        <div class="row">
+                <div class="col-md-4 col-sm-12 col-sms12">
+                    <div class="currency-language">
+                        <div class="form-currency">
+<label for="newsletter">Currency:</label>
+<ul class="drop-currency">
+    <li class="currency-trigger">
+                                                    <a class="level-0" href="http://www.plazathemes.com/demo/ma_sagitta/index.php/directory/currency/switch/currency/USD/uenc/aHR0cDovL3d3dy5wbGF6YXRoZW1lcy5jb20vZGVtby9tYV9zYWdpdHRhL2luZGV4LnBocC9jdXN0b21lci9hY2NvdW50L2xvZ2luLw,,/">USD</a>
+                            <ul class="sub-currency">
+            <div class="currency-content">
+                                <li>
+                <a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/directory/currency/switch/currency/EUR/uenc/aHR0cDovL3d3dy5wbGF6YXRoZW1lcy5jb20vZGVtby9tYV9zYWdpdHRhL2luZGV4LnBocC9jdXN0b21lci9hY2NvdW50L2xvZ2luLw,,/" onclick="setLocation(this.value);">
+                        EUR                </a>
+                    </li>
+                
+                                <li>
+                <a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/directory/currency/switch/currency/USD/uenc/aHR0cDovL3d3dy5wbGF6YXRoZW1lcy5jb20vZGVtby9tYV9zYWdpdHRhL2luZGV4LnBocC9jdXN0b21lci9hY2NvdW50L2xvZ2luLw,,/" onclick="setLocation(this.value);">
+                        USD                </a>
+                    </li>
+                
+                        </div>
+        </ul>
+    </li>
+</ul>
+</div>
+                        <div class="form-language">
+    <label for="newsletter">Language:</label>
+    <ul class="drop-lang">
+        <li class="drop-trigger">
+                                                                                                                                                            <a class="ie" href="http://www.plazathemes.com/demo/ma_sagitta/index.php/customer/account/login/?___store=ie&amp;___from_store=ie">Ie</a>
+                                
+            <ul class="sub-lang">
+                <div class="lang-content">
+                                                        <li><a class="au" href="http://www.plazathemes.com/demo/ma_sagitta/index.php/customer/account/login/?___store=au&amp;___from_store=ie">Au</a></li>
+                                                        <li><a class="br" href="http://www.plazathemes.com/demo/ma_sagitta/index.php/customer/account/login/?___store=br&amp;___from_store=ie">Br</a></li>
+                                                        <li><a class="en" href="http://www.plazathemes.com/demo/ma_sagitta/index.php/customer/account/login/?___store=en&amp;___from_store=ie">En</a></li>
+                                                        <li><a class="fr" href="http://www.plazathemes.com/demo/ma_sagitta/index.php/customer/account/login/?___store=fr&amp;___from_store=ie">Fr</a></li>
+                                                        <li><a class="ge" href="http://www.plazathemes.com/demo/ma_sagitta/index.php/customer/account/login/?___store=ge&amp;___from_store=ie">Ge</a></li>
+                                                        <li><a class="ie" href="http://www.plazathemes.com/demo/ma_sagitta/index.php/customer/account/login/?___store=ie&amp;___from_store=ie">Ie</a></li>
+                                </div>
+            </ul>
+        
+        </li>
+    </ul>
+</div>
+                        <div class="link-mobile">
+                            <div class="title-link"><h2>Account</h2></div>
+                            <div class="link-content">
+                                <ul class="links">
+                        <li class="first" ><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/customer/account/" title="My Account" >My Account</a></li>
+                                <li ><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/wishlist/" title="My Wishlist" >My Wishlist</a></li>
+                                <li ><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/checkout/cart/" title="My Cart" class="top-link-cart">My Cart</a></li>
+                                <li ><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/checkout/" title="Checkout" class="top-link-checkout">Checkout</a></li>
+                                <li class=" last" ><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/customer/account/login/" title="Log In" >Log In</a></li>
+            </ul>
+                            </div>
+                        </div>
+                        <div class="cart-mobile">
+                            <div class="top-cart-wrapper mobile">
+                                <div class="top-cart-contain">
+                                    <div id = "mini_cart_block_mobile">
+                                        <script type="text/javascript">
+    $jq(document).ready(function(){
+         var enable_module = $jq('#enable_module').val();
+         if(enable_module==0) return false;
+    })
+
+</script>
+<div id ="mini_cart_block_mobile">
+    <div class="block-cart mini_cart_ajax">
+            <div class="block-cart">
+                                <div class="top-cart-title">
+                    <div class="shopping_cart">shopping cart</div>
+                    <div class="shopping_cart_mobile">cart</div>
+                  <span><span> item</span> - <span class="price">$0.00</span></span>
+                </div>
+                <div class="cart_arrow"></div>
+                <div class="top-cart-content">
+                                                                <p class="empty">You have no items in your shopping cart.</p>
+                                        <div class="cart-bottom">
+                        <div class="subtotal-title">Subtotal</div>
+                    <div class="top-subtotal"> <span class="price">$0.00</span></div>
+                                        </div>
+                </div>
+            </div>
+
+    </div>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sms12">
+                    <p class="welcome-msg">Default welcome msg! </p>
+                </div>
+                
+                <div class="col-md-6 col-sms12">
+                    <ul class="links">
+                        <li class="first" ><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/customer/account/" title="My Account" >My Account</a></li>
+                                <li ><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/wishlist/" title="My Wishlist" >My Wishlist</a></li>
+                                <li ><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/checkout/cart/" title="My Cart" class="top-link-cart">My Cart</a></li>
+                                <li ><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/checkout/" title="Checkout" class="top-link-checkout">Checkout</a></li>
+                                <li class=" last" ><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/customer/account/login/" title="Log In" >Log In</a></li>
+            </ul>
+                </div>
+                
+        </div>
+        </div>
+    </div>
+    <div class="header-static">
+    <div class="container">
+        <div class="row">
+            <div class="f-col col-sm-6 col-md-3 col-sms-6 col-smb-12">
+                <div class="header-time">
+                    <h2>WORKING TIME</h2>
+                    <p>8.00 AM - 10.00 PM</p>
+                </div>
+            </div>
+            <div class="f-col col-sm-6 col-md-3 col-sms-6 col-smb-12">
+                <div class="header-shipping">
+                    <h2>FREE SHIPPING & RETURN</h2>
+                    <p>On Order Over $100</p>
+                </div>
+            </div>
+            <div class="f-col col-sm-6 col-md-3 col-sms-6 col-smb-12">
+                <div class="header-money">
+                    <h2>100% Money Back</h2>
+                    <p>30 Days Money Back Guarantee</p>
+                </div>
+            </div>
+            <div class="f-col col-sm-6 col-md-3 col-sms-6 col-smb-12">
+                <div class="header-phone">
+                    <h2>PHONE: 0123-456-789</h2>
+                    <p>Order Online Now !</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    <div class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="row">
+                    <div class="col-xs-12 col-md-3 col-sm-12">
+                                                    <a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/" title="Magento Commerce" class="logo"><strong>Magento Commerce</strong><img src="http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/ma_sagitta/images/logo-yellow.png" alt="Magento Commerce" /></a>
+                                                <div class="header-static-mobile">
+                            <div class="header-static">
+    <div class="container">
+        <div class="row">
+            <div class="f-col col-sm-6 col-md-3 col-sms-6 col-smb-12">
+                <div class="header-time">
+                    <h2>WORKING TIME</h2>
+                    <p>8.00 AM - 10.00 PM</p>
+                </div>
+            </div>
+            <div class="f-col col-sm-6 col-md-3 col-sms-6 col-smb-12">
+                <div class="header-shipping">
+                    <h2>FREE SHIPPING & RETURN</h2>
+                    <p>On Order Over $100</p>
+                </div>
+            </div>
+            <div class="f-col col-sm-6 col-md-3 col-sms-6 col-smb-12">
+                <div class="header-money">
+                    <h2>100% Money Back</h2>
+                    <p>30 Days Money Back Guarantee</p>
+                </div>
+            </div>
+            <div class="f-col col-sm-6 col-md-3 col-sms-6 col-smb-12">
+                <div class="header-phone">
+                    <h2>PHONE: 0123-456-789</h2>
+                    <p>Order Online Now !</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-sm-12">
+                            <div class="header-box">
+                                    <div class="search-container">
+                                    
+<form id="search_mini_form" action="http://www.plazathemes.com/demo/ma_sagitta/index.php/catalogsearch/result/" method="get">
+    <div class="form-search">
+        <label for="search">Search:</label>
+        <div class="box-select">
+        <div class="header-select">
+            <select class="selectpicker" id="cat" name="cat">
+                <option value="">Categories</option>
+                                    <option value="3">Shirts</option>
+                                                                                                        <option value="11">_Dresses</option>
+                                                                                                            <option value="30">_&nbsp;_Cocktail</option>
+                                                                                                                                                                                                        <option value="31">_&nbsp;_Day</option>
+                                                                                                                                                                                                        <option value="32">_&nbsp;_Evening</option>
+                                                                                                                                                                                                        <option value="33">_&nbsp;_Sundresses</option>
+                                                                                                                                                                                                                                                            <option value="12">_Accessories</option>
+                                                                                                            <option value="40">_&nbsp;_Lifestyle</option>
+                                                                                                                                                                                                        <option value="41">_&nbsp;_Bras</option>
+                                                                                                                                                                                                        <option value="42">_&nbsp;_Scarves</option>
+                                                                                                                                                                                                        <option value="43">_&nbsp;_Small Leathers</option>
+                                                                                                                                                                                                                                                            <option value="13">_Tops</option>
+                                                                                                            <option value="45">_&nbsp;_Evening</option>
+                                                                                                                                                                                                        <option value="47">_&nbsp;_Shrot Sleeved</option>
+                                                                                                                                                                                                        <option value="48">_&nbsp;_Sleeveless</option>
+                                                                                                                                                                                                        <option value="49">_&nbsp;_Tanks and Camis</option>
+                                                                                                                                                                                                                                                            <option value="14">_Handbags</option>
+                                                                                                            <option value="50">_&nbsp;_Toter</option>
+                                                                                                                                                                                                        <option value="51">_&nbsp;_Clutches</option>
+                                                                                                                                                                                                        <option value="52">_&nbsp;_Cross Body</option>
+                                                                                                                                                                                                        <option value="36">_&nbsp;_Blouses And Shirts</option>
+                                                                                                                                                                                                                                                                                                            <option value="4">Pants</option>
+                                                                                                        <option value="104">_Clothing </option>
+                                                                                                            <option value="107">_&nbsp;_Coats & Jackets </option>
+                                                                                                                                                                                                        <option value="108">_&nbsp;_Blazers </option>
+                                                                                                                                                                                                        <option value="109">_&nbsp;_Jackets </option>
+                                                                                                                                                                                                        <option value="110">_&nbsp;_Raincoats </option>
+                                                                                                                                                                                                                                                            <option value="105">_Shoes</option>
+                                                                                                            <option value="111">_&nbsp;_Ankle Boots </option>
+                                                                                                                                                                                                        <option value="112">_&nbsp;_Footwear </option>
+                                                                                                                                                                                                        <option value="113">_&nbsp;_Clog sandals </option>
+                                                                                                                                                                                                        <option value="114">_&nbsp;_Combat Boots </option>
+                                                                                                                                                                                                                                                            <option value="106">_Bags</option>
+                                                                                                            <option value="115">_&nbsp;_Bootees  Bags</option>
+                                                                                                                                                                                                        <option value="116">_&nbsp;_Blazers</option>
+                                                                                                                                                                                                        <option value="117">_&nbsp;_Shoes </option>
+                                                                                                                                                                                                        <option value="118">_&nbsp;_Jackets   </option>
+                                                                                                                                                                                                                                                                                                            <option value="5">Jeans</option>
+                                                                                                                                                        <option value="6">Outer wear</option>
+                                                                                                        <option value="177">_Girls</option>
+                                                                                                            <option value="178">_&nbsp;_Tops & Tees</option>
+                                                                                                                                                                                                        <option value="179">_&nbsp;_Leggings</option>
+                                                                                                                                                                                                        <option value="180">_&nbsp;_Skirts</option>
+                                                                                                                                                                                                        <option value="181">_&nbsp;_Dresses</option>
+                                                                                                                                                                                                                                                            <option value="182">_Boys</option>
+                                                                                                            <option value="183">_&nbsp;_Suits & Tailoring</option>
+                                                                                                                                                                                                        <option value="184">_&nbsp;_Jeans</option>
+                                                                                                                                                                                                        <option value="185">_&nbsp;_T-Shirts</option>
+                                                                                                                                                                                                        <option value="186">_&nbsp;_Shirts</option>
+                                                                                                                                                                                                                                                            <option value="187">_Kids & Baby</option>
+                                                                                                            <option value="188">_&nbsp;_Nightwears</option>
+                                                                                                                                                                                                        <option value="189">_&nbsp;_Capris</option>
+                                                                                                                                                                                                        <option value="190">_&nbsp;_Tops & Tees</option>
+                                                                                                                                                                                                        <option value="191">_&nbsp;_Sweaters</option>
+                                                                                                                                                                                                                                                            <option value="192">_Women</option>
+                                                                                                            <option value="193">_&nbsp;_T-Shirts</option>
+                                                                                                                                                                                                        <option value="194">_&nbsp;_Dresses</option>
+                                                                                                                                                                                                        <option value="195">_&nbsp;_Leggings</option>
+                                                                                                                                                                                                        <option value="196">_&nbsp;_Shirts</option>
+                                                                                                                                                                                                                                                                                                            <option value="7">Dresses</option>
+                                                                                                        <option value="120">_Girls</option>
+                                                                                                            <option value="121">_&nbsp;_Tops & Tees</option>
+                                                                                                                                                                                                        <option value="122">_&nbsp;_Leggings</option>
+                                                                                                                                                                                                        <option value="123">_&nbsp;_Skirts</option>
+                                                                                                                                                                                                        <option value="124">_&nbsp;_Dresses</option>
+                                                                                                                                                                                                                                                            <option value="125">_Boys</option>
+                                                                                                            <option value="126">_&nbsp;_Suits</option>
+                                                                                                                                                                                                        <option value="127">_&nbsp;_Jeans</option>
+                                                                                                                                                                                                        <option value="128">_&nbsp;_T-Shirts</option>
+                                                                                                                                                                                                        <option value="129">_&nbsp;_T-Shirts</option>
+                                                                                                                                                                                                                                                            <option value="130">_Kids & Baby</option>
+                                                                                                            <option value="131">_&nbsp;_Nightwears</option>
+                                                                                                                                                                                                        <option value="132">_&nbsp;_Capris</option>
+                                                                                                                                                                                                        <option value="133">_&nbsp;_Tops & Tees</option>
+                                                                                                                                                                                                        <option value="134">_&nbsp;_Sweaters</option>
+                                                                                                                                                                                                                                                            <option value="135">_Women</option>
+                                                                                                            <option value="136">_&nbsp;_T-Shirts</option>
+                                                                                                                                                                                                        <option value="137">_&nbsp;_Dresses</option>
+                                                                                                                                                                                                        <option value="138">_&nbsp;_Leggings</option>
+                                                                                                                                                                                                        <option value="139">_&nbsp;_Shirts</option>
+                                                                                                                                                                                                                                                                                                            <option value="8">Shoes</option>
+                                                                                                        <option value="140">_Kids & Baby</option>
+                                                                                                            <option value="141">_&nbsp;_Party</option>
+                                                                                                                                                                                                        <option value="142">_&nbsp;_Nightwears</option>
+                                                                                                                                                                                                        <option value="143">_&nbsp;_Sports</option>
+                                                                                                                                                                                                        <option value="144">_&nbsp;_Casuals</option>
+                                                                                                                                                                                                                                                            <option value="145">_Women</option>
+                                                                                                            <option value="146">_&nbsp;_Boots</option>
+                                                                                                                                                                                                        <option value="147">_&nbsp;_Flats</option>
+                                                                                                                                                                                                        <option value="148">_&nbsp;_Hills</option>
+                                                                                                                                                                                                        <option value="149">_&nbsp;_Accessories</option>
+                                                                                                                                                                                                                                                            <option value="150">_Shoes</option>
+                                                                                                            <option value="151">_&nbsp;_Flate</option>
+                                                                                                                                                                                                        <option value="152">_&nbsp;_Shoes</option>
+                                                                                                                                                                                                        <option value="153">_&nbsp;_Flate</option>
+                                                                                                                                                                                                        <option value="154">_&nbsp;_Sandals</option>
+                                                                                                                                                                                                                                                                                                            <option value="10">Accessories</option>
+                                                                                                        <option value="157">_Dresses</option>
+                                                                                                            <option value="161">_&nbsp;_Day</option>
+                                                                                                                                                                                                        <option value="162">_&nbsp;_Cocktail</option>
+                                                                                                                                                                                                        <option value="163">_&nbsp;_Gold Ring</option>
+                                                                                                                                                                                                        <option value="164">_&nbsp;_Silver Ring</option>
+                                                                                                                                                                                                                                                            <option value="158">_Accessories</option>
+                                                                                                            <option value="165">_&nbsp;_Bands Gold</option>
+                                                                                                                                                                                                        <option value="166">_&nbsp;_Silver Bands</option>
+                                                                                                                                                                                                        <option value="167">_&nbsp;_Tungsten Bands</option>
+                                                                                                                                                                                                        <option value="168">_&nbsp;_Carbide Bands</option>
+                                                                                                                                                                                                                                                            <option value="159">_Tops</option>
+                                                                                                            <option value="169">_&nbsp;_Carbide Ring</option>
+                                                                                                                                                                                                        <option value="170">_&nbsp;_Gold Ring</option>
+                                                                                                                                                                                                        <option value="171">_&nbsp;_Platinum Rings</option>
+                                                                                                                                                                                                        <option value="172">_&nbsp;_Silver Ring</option>
+                                                                                                                                                                                                                                                            <option value="160">_Handbags</option>
+                                                                                                            <option value="173">_&nbsp;_Silver Ring</option>
+                                                                                                                                                                                                        <option value="174">_&nbsp;_Tungsten Ring</option>
+                                                                                                                                                                                                        <option value="175">_&nbsp;_Gold Ring</option>
+                                                                                                                                                                                                        <option value="176">_&nbsp;_Platinum Rings</option>
+                                                                                                                                                                                                                                                                                                            <option value="155">Sports</option>
+                                                                                                                                                        <option value="156">Underwear</option>
+                                                                                                                                                </select>
+        </div>
+        </div>
+        <div class="header-input"><input id="search" type="text" name="q" class="input-text" /></div>
+        <button type="submit" title="Search" class="button"><span><span>Search</span></span></button>
+        <!--<div id="search_autocomplete" class="search-autocomplete"></div>-->
+    </div>
+</form>
+<script type="text/javascript">
+//<![CDATA[
+    var searchForm = new Varien.searchForm('search_mini_form', 'search', 'Search entire store here...');
+    searchForm.initAutocomplete('http://www.plazathemes.com/demo/ma_sagitta/index.php/catalogsearch/ajax/suggest/', 'search_autocomplete');
+//]]>
+</script>
+                                    </div>
+                                    
+                            </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3 col-sm-12">
+                            <div class="header-box fly-images">
+                                <div class="top-cart-wrapper">
+                                        <div class="top-cart-contain">
+                                            <script type="text/javascript">
+    $jq(document).ready(function(){
+         var enable_module = $jq('#enable_module').val();
+         if(enable_module==0) return false;
+    })
+
+</script>
+<div id ="mini_cart_block">
+    <div class="block-cart mini_cart_ajax">
+            <div class="block-cart">
+                                <div class="top-cart-title">
+                    <div class="shopping_cart">shopping cart</div>
+                    <div class="shopping_cart_mobile">cart</div>
+                  <span><span> item</span> - <span class="price">$0.00</span></span>
+                </div>
+                <div class="cart_arrow"></div>
+                <div class="top-cart-content">
+                                                                <p class="empty">You have no items in your shopping cart.</p>
+                                        <div class="cart-bottom">
+                        <div class="subtotal-title">Subtotal</div>
+                    <div class="top-subtotal"> <span class="price">$0.00</span></div>
+                                        </div>
+                </div>
+            </div>
+
+    </div>
+</div>
+                                        </div>
+                                </div>
+                                
+                            </div>
+                    </div>
+                </div>
+            </div>
+                    </div>
+    </div>
+    </div>
+    <div class="ma-nav-mobile-container visible-xs">
+	<div class="container">
+		<div class="navbar">
+			<div id="navbar-inner" class="navbar-inner navbar-inactive">
+                                <div class="menu-mobile">
+                                    <a class="btn btn-navbar navbar-toggle">
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                    </a>
+                                    <span class="brand navbar-brand">Categories</span>
+                                </div>
+				<ul id="ma-mobilemenu" class="mobilemenu nav-collapse collapse">
+					<li class="level0 nav-1 level-top first parent">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shirts.html" class="level-top">
+<span>Shirts</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-1-1 first parent">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shirts/dresses.html">
+<span>Dresses</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-1-1 first">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shirts/dresses/cocktail.html">
+<span>Cocktail</span>
+</a>
+</li><li class="level2 nav-1-1-2">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shirts/dresses/day.html">
+<span>Day</span>
+</a>
+</li><li class="level2 nav-1-1-3">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shirts/dresses/evening.html">
+<span>Evening</span>
+</a>
+</li><li class="level2 nav-1-1-4 last">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shirts/dresses/sundresses.html">
+<span>Sundresses</span>
+</a>
+</li>
+</ul>
+</li><li class="level1 nav-1-2 parent">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shirts/accessories.html">
+<span>Accessories</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-2-5 first">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shirts/accessories/lifestyle.html">
+<span>Lifestyle</span>
+</a>
+</li><li class="level2 nav-1-2-6">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shirts/accessories/bras.html">
+<span>Bras</span>
+</a>
+</li><li class="level2 nav-1-2-7">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shirts/accessories/scarves.html">
+<span>Scarves</span>
+</a>
+</li><li class="level2 nav-1-2-8 last">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shirts/accessories/small-leathers.html">
+<span>Small Leathers</span>
+</a>
+</li>
+</ul>
+</li><li class="level1 nav-1-3 parent">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shirts/tops.html">
+<span>Tops</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-3-9 first">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shirts/tops/evening.html">
+<span>Evening</span>
+</a>
+</li><li class="level2 nav-1-3-10">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shirts/tops/shrot-sleeved.html">
+<span>Shrot Sleeved</span>
+</a>
+</li><li class="level2 nav-1-3-11">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shirts/tops/sleeveless.html">
+<span>Sleeveless</span>
+</a>
+</li><li class="level2 nav-1-3-12 last">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shirts/tops/tanks-and-camis.html">
+<span>Tanks and Camis</span>
+</a>
+</li>
+</ul>
+</li><li class="level1 nav-1-4 last parent">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shirts/handbags.html">
+<span>Handbags</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-4-13 first">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shirts/handbags/toter.html">
+<span>Toter</span>
+</a>
+</li><li class="level2 nav-1-4-14">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shirts/handbags/clutches.html">
+<span>Clutches</span>
+</a>
+</li><li class="level2 nav-1-4-15">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shirts/handbags/cross-body.html">
+<span>Cross Body</span>
+</a>
+</li><li class="level2 nav-1-4-16 last">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shirts/handbags/blouses-and-shirts.html">
+<span>Blouses And Shirts</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li><li class="level0 nav-2 active level-top parent">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/pants.html" class="level-top">
+<span>Pants</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-2-1 active first parent">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/pants/clothing.html">
+<span>Clothing </span>
+</a>
+<ul class="level1">
+<li class="level2 nav-2-1-1 first">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/pants/clothing/coats-jackets.html">
+<span>Coats &amp; Jackets </span>
+</a>
+</li><li class="level2 nav-2-1-2">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/pants/clothing/blazers.html">
+<span>Blazers </span>
+</a>
+</li><li class="level2 nav-2-1-3">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/pants/clothing/jackets.html">
+<span>Jackets </span>
+</a>
+</li><li class="level2 nav-2-1-4 last">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/pants/clothing/raincoats.html">
+<span>Raincoats </span>
+</a>
+</li>
+</ul>
+</li><li class="level1 nav-2-2 parent">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/pants/shoes.html">
+<span>Shoes</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-2-2-5 first">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/pants/shoes/ankle-boots.html">
+<span>Ankle Boots </span>
+</a>
+</li><li class="level2 nav-2-2-6">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/pants/shoes/footwear.html">
+<span>Footwear </span>
+</a>
+</li><li class="level2 nav-2-2-7">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/pants/shoes/clog-sandals.html">
+<span>Clog sandals </span>
+</a>
+</li><li class="level2 nav-2-2-8 last">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/pants/shoes/combat-boots.html">
+<span>Combat Boots </span>
+</a>
+</li>
+</ul>
+</li><li class="level1 nav-2-3 last parent">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/pants/bags.html">
+<span>Bags</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-2-3-9 first">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/pants/bags/bootees-bags.html">
+<span>Bootees  Bags</span>
+</a>
+</li><li class="level2 nav-2-3-10">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/pants/bags/blazers.html">
+<span>Blazers</span>
+</a>
+</li><li class="level2 nav-2-3-11">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/pants/bags/shoes.html">
+<span>Shoes </span>
+</a>
+</li><li class="level2 nav-2-3-12 last">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/pants/bags/jackets.html">
+<span>Jackets   </span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li><li class="level0 nav-3 level-top">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/jeans.html" class="level-top">
+<span>Jeans</span>
+</a>
+</li><li class="level0 nav-4 level-top parent">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/outer-wear.html" class="level-top">
+<span>Outer wear</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-4-1 first parent">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/outer-wear/girls.html">
+<span>Girls</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-4-1-1 first">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/outer-wear/girls/tops-tees.html">
+<span>Tops &amp; Tees</span>
+</a>
+</li><li class="level2 nav-4-1-2">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/outer-wear/girls/leggings.html">
+<span>Leggings</span>
+</a>
+</li><li class="level2 nav-4-1-3">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/outer-wear/girls/skirts.html">
+<span>Skirts</span>
+</a>
+</li><li class="level2 nav-4-1-4 last">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/outer-wear/girls/dresses.html">
+<span>Dresses</span>
+</a>
+</li>
+</ul>
+</li><li class="level1 nav-4-2 parent">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/outer-wear/boys.html">
+<span>Boys</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-4-2-5 first">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/outer-wear/boys/suits-tailoring.html">
+<span>Suits &amp; Tailoring</span>
+</a>
+</li><li class="level2 nav-4-2-6">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/outer-wear/boys/jeans.html">
+<span>Jeans</span>
+</a>
+</li><li class="level2 nav-4-2-7">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/outer-wear/boys/t-shirts.html">
+<span>T-Shirts</span>
+</a>
+</li><li class="level2 nav-4-2-8 last">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/outer-wear/boys/shirts.html">
+<span>Shirts</span>
+</a>
+</li>
+</ul>
+</li><li class="level1 nav-4-3 parent">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/outer-wear/kids-baby.html">
+<span>Kids &amp; Baby</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-4-3-9 first">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/outer-wear/kids-baby/nightwears.html">
+<span>Nightwears</span>
+</a>
+</li><li class="level2 nav-4-3-10">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/outer-wear/kids-baby/capris.html">
+<span>Capris</span>
+</a>
+</li><li class="level2 nav-4-3-11">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/outer-wear/kids-baby/tops-tees.html">
+<span>Tops &amp; Tees</span>
+</a>
+</li><li class="level2 nav-4-3-12 last">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/outer-wear/kids-baby/sweaters.html">
+<span>Sweaters</span>
+</a>
+</li>
+</ul>
+</li><li class="level1 nav-4-4 last parent">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/outer-wear/women.html">
+<span>Women</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-4-4-13 first">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/outer-wear/women/t-shirts.html">
+<span>T-Shirts</span>
+</a>
+</li><li class="level2 nav-4-4-14">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/outer-wear/women/dresses.html">
+<span>Dresses</span>
+</a>
+</li><li class="level2 nav-4-4-15">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/outer-wear/women/leggings.html">
+<span>Leggings</span>
+</a>
+</li><li class="level2 nav-4-4-16 last">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/outer-wear/women/shirts.html">
+<span>Shirts</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li><li class="level0 nav-5 level-top parent">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/dresses.html" class="level-top">
+<span>Dresses</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-5-1 first parent">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/dresses/girls.html">
+<span>Girls</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-5-1-1 first">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/dresses/girls/tops-tees.html">
+<span>Tops &amp; Tees</span>
+</a>
+</li><li class="level2 nav-5-1-2">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/dresses/girls/leggings.html">
+<span>Leggings</span>
+</a>
+</li><li class="level2 nav-5-1-3">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/dresses/girls/skirts.html">
+<span>Skirts</span>
+</a>
+</li><li class="level2 nav-5-1-4 last">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/dresses/girls/dresses.html">
+<span>Dresses</span>
+</a>
+</li>
+</ul>
+</li><li class="level1 nav-5-2 parent">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/dresses/boys.html">
+<span>Boys</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-5-2-5 first">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/dresses/boys/suits.html">
+<span>Suits</span>
+</a>
+</li><li class="level2 nav-5-2-6">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/dresses/boys/jeans.html">
+<span>Jeans</span>
+</a>
+</li><li class="level2 nav-5-2-7">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/dresses/boys/t-shirts.html">
+<span>T-Shirts</span>
+</a>
+</li><li class="level2 nav-5-2-8 last">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/dresses/boys/t-shirts-1.html">
+<span>T-Shirts</span>
+</a>
+</li>
+</ul>
+</li><li class="level1 nav-5-3 parent">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/dresses/kids-baby.html">
+<span>Kids &amp; Baby</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-5-3-9 first">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/dresses/kids-baby/nightwears.html">
+<span>Nightwears</span>
+</a>
+</li><li class="level2 nav-5-3-10">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/dresses/kids-baby/capris.html">
+<span>Capris</span>
+</a>
+</li><li class="level2 nav-5-3-11">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/dresses/kids-baby/tops-tees.html">
+<span>Tops &amp; Tees</span>
+</a>
+</li><li class="level2 nav-5-3-12 last">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/dresses/kids-baby/sweaters.html">
+<span>Sweaters</span>
+</a>
+</li>
+</ul>
+</li><li class="level1 nav-5-4 last parent">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/dresses/women.html">
+<span>Women</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-5-4-13 first">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/dresses/women/t-shirts.html">
+<span>T-Shirts</span>
+</a>
+</li><li class="level2 nav-5-4-14">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/dresses/women/dresses.html">
+<span>Dresses</span>
+</a>
+</li><li class="level2 nav-5-4-15">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/dresses/women/leggings.html">
+<span>Leggings</span>
+</a>
+</li><li class="level2 nav-5-4-16 last">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/dresses/women/shirts.html">
+<span>Shirts</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li><li class="level0 nav-6 level-top parent">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shoes.html" class="level-top">
+<span>Shoes</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-6-1 first parent">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shoes/kids-baby.html">
+<span>Kids &amp; Baby</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-6-1-1 first">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shoes/kids-baby/party.html">
+<span>Party</span>
+</a>
+</li><li class="level2 nav-6-1-2">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shoes/kids-baby/nightwears.html">
+<span>Nightwears</span>
+</a>
+</li><li class="level2 nav-6-1-3">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shoes/kids-baby/sports.html">
+<span>Sports</span>
+</a>
+</li><li class="level2 nav-6-1-4 last">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shoes/kids-baby/casuals.html">
+<span>Casuals</span>
+</a>
+</li>
+</ul>
+</li><li class="level1 nav-6-2 parent">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shoes/women.html">
+<span>Women</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-6-2-5 first">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shoes/women/boots.html">
+<span>Boots</span>
+</a>
+</li><li class="level2 nav-6-2-6">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shoes/women/flats.html">
+<span>Flats</span>
+</a>
+</li><li class="level2 nav-6-2-7">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shoes/women/hills.html">
+<span>Hills</span>
+</a>
+</li><li class="level2 nav-6-2-8 last">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shoes/women/accessories.html">
+<span>Accessories</span>
+</a>
+</li>
+</ul>
+</li><li class="level1 nav-6-3 last parent">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shoes/shoes.html">
+<span>Shoes</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-6-3-9 first">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shoes/shoes/flate.html">
+<span>Flate</span>
+</a>
+</li><li class="level2 nav-6-3-10">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shoes/shoes/shoes.html">
+<span>Shoes</span>
+</a>
+</li><li class="level2 nav-6-3-11">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shoes/shoes/flate-1.html">
+<span>Flate</span>
+</a>
+</li><li class="level2 nav-6-3-12 last">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shoes/shoes/sandals.html">
+<span>Sandals</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li><li class="level0 nav-7 level-top parent">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/accessories-1.html" class="level-top">
+<span>Accessories</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-7-1 first parent">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/accessories-1/dresses.html">
+<span>Dresses</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-7-1-1 first">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/accessories-1/dresses/day.html">
+<span>Day</span>
+</a>
+</li><li class="level2 nav-7-1-2">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/accessories-1/dresses/cocktail.html">
+<span>Cocktail</span>
+</a>
+</li><li class="level2 nav-7-1-3">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/accessories-1/dresses/gold-ring.html">
+<span>Gold Ring</span>
+</a>
+</li><li class="level2 nav-7-1-4 last">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/accessories-1/dresses/silver-ring.html">
+<span>Silver Ring</span>
+</a>
+</li>
+</ul>
+</li><li class="level1 nav-7-2 parent">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/accessories-1/accessories.html">
+<span>Accessories</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-7-2-5 first">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/accessories-1/accessories/bands-gold.html">
+<span>Bands Gold</span>
+</a>
+</li><li class="level2 nav-7-2-6">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/accessories-1/accessories/silver-bands.html">
+<span>Silver Bands</span>
+</a>
+</li><li class="level2 nav-7-2-7">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/accessories-1/accessories/tungsten-bands.html">
+<span>Tungsten Bands</span>
+</a>
+</li><li class="level2 nav-7-2-8 last">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/accessories-1/accessories/carbide-bands.html">
+<span>Carbide Bands</span>
+</a>
+</li>
+</ul>
+</li><li class="level1 nav-7-3 parent">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/accessories-1/tops.html">
+<span>Tops</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-7-3-9 first">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/accessories-1/tops/carbide-ring.html">
+<span>Carbide Ring</span>
+</a>
+</li><li class="level2 nav-7-3-10">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/accessories-1/tops/gold-ring.html">
+<span>Gold Ring</span>
+</a>
+</li><li class="level2 nav-7-3-11">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/accessories-1/tops/platinum-rings.html">
+<span>Platinum Rings</span>
+</a>
+</li><li class="level2 nav-7-3-12 last">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/accessories-1/tops/silver-ring.html">
+<span>Silver Ring</span>
+</a>
+</li>
+</ul>
+</li><li class="level1 nav-7-4 last parent">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/accessories-1/handbags.html">
+<span>Handbags</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-7-4-13 first">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/accessories-1/handbags/silver-ring.html">
+<span>Silver Ring</span>
+</a>
+</li><li class="level2 nav-7-4-14">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/accessories-1/handbags/tungsten-ring.html">
+<span>Tungsten Ring</span>
+</a>
+</li><li class="level2 nav-7-4-15">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/accessories-1/handbags/gold-ring.html">
+<span>Gold Ring</span>
+</a>
+</li><li class="level2 nav-7-4-16 last">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/accessories-1/handbags/platinum-rings.html">
+<span>Platinum Rings</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li><li class="level0 nav-8 level-top">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/sports.html" class="level-top">
+<span>Sports</span>
+</a>
+</li><li class="level0 nav-9 level-top last">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/underwear.html" class="level-top">
+<span>Underwear</span>
+</a>
+</li>				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="nav-container visible-lg visible-md">
+    <div class="container">
+        <div id="pt_custommenu" class="pt_custommenu">
+        <div id="pt_menu_home" class="pt_menu">
+<div class="parentMenu">
+<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/">
+<span>Home</span>
+</a>
+</div>
+</div>                                                                                                                                                                                            
+        <div id="pt_menu_pt_item_menu_categories" class="pt_menu">
+<div class="parentMenu">
+<span class="block-title">Categories</span>
+</div>
+<div id="popup_pt_item_menu_categories" class="popup cmsblock" style="display: none; width: 904px;">
+<div class="arrow-menu" id="arrow-menu_pt_item_menu_categories">
+</div>
+<div class="box-menu" id="box-menu_pt_item_menu_categories">
+<div class="block2" id="block2_pt_item_menu_categories">
+<div class="static_block_custom_menu">
+<div class="custom col">
+<div class="custom-images"><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shirts.html"><img src="http://www.plazathemes.com/demo/ma_sagitta/media/wysiwyg/category.png" alt="" /></a></div>
+<div class="custom-images1"><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/pants.html"><img src="http://www.plazathemes.com/demo/ma_sagitta/media/wysiwyg/category1.png" alt="" /></a></div>
+<div class="custom-images2"><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/jeans.html"><img src="http://www.plazathemes.com/demo/ma_sagitta/media/wysiwyg/category2.png" alt="" /></a></div>
+</div>
+<div class="custom col1">
+<div class="custom-images3"><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/outer-wear.html"><img src="http://www.plazathemes.com/demo/ma_sagitta/media/wysiwyg/category3.png" alt="" /></a></div>
+<div class="custom-images4"><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/dresses.html"><img src="http://www.plazathemes.com/demo/ma_sagitta/media/wysiwyg/category4.png" alt="" /></a></div>
+<div class="custom-images5"><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shoes.html"><img src="http://www.plazathemes.com/demo/ma_sagitta/media/wysiwyg/category5.png" alt="" /></a></div>
+</div>
+<div class="custom col2">
+<div class="custom-images6"><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/accessories-1.html"><img src="http://www.plazathemes.com/demo/ma_sagitta/media/wysiwyg/category6.png" alt="" /></a></div>
+<div class="custom-images7"><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/sports.html"><img src="http://www.plazathemes.com/demo/ma_sagitta/media/wysiwyg/category7.png" alt="" /></a></div>
+<div class="custom-images8"><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/underwear.html"><img src="http://www.plazathemes.com/demo/ma_sagitta/media/wysiwyg/category8.png" alt="" /></a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div id="pt_menu_pt_item_menu_featured_custom" class="pt_menu">
+<div class="parentMenu">
+<span class="block-title">Featured&nbsp;Custom</span>
+</div>
+<div id="popup_pt_item_menu_featured_custom" class="popup cmsblock" style="display: none; width: 904px;">
+<div class="arrow-menu" id="arrow-menu_pt_item_menu_featured_custom">
+</div>
+<div class="box-menu" id="box-menu_pt_item_menu_featured_custom">
+<div class="block2" id="block2_pt_item_menu_featured_custom">
+<div class="feature-catlist"><div class="catlist">
+	<h2 class="title-catlist">CATEGORY LIST</h2>
+	 
+	<div class='catgrid col_1'><div class="catlist_level_top">
+						<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shirts.html/"><img src="http://www.plazathemes.com/demo/ma_sagitta/media//catalog/category/cache/cat_resized/feature-menu.jpg" alt="Shirts" />
+		                </a>
+				<h3>Shirts</h3>
+			</div><ul><li><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shirts/dresses.html/">Dresses</a></li><li><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shirts/accessories.html/">Accessories</a></li><li><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shirts/tops.html/">Tops</a></li><li><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shirts/handbags.html/">Handbags</a></li></ul></div><div class='catgrid col_2'><div class="catlist_level_top">
+						<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/outer-wear.html/"><img src="http://www.plazathemes.com/demo/ma_sagitta/media//catalog/category/cache/cat_resized/feature3-menu.jpg" alt="Outer wear" />
+		                </a>
+				<h3>Outer wear</h3>
+			</div><ul><li><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/outer-wear/girls.html/">Girls</a></li><li><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/outer-wear/women.html/">Women</a></li><li><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/outer-wear/kids-baby.html/">Kids & Baby</a></li><li><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/outer-wear/boys.html/">Boys</a></li></ul></div><div class='catgrid col_3'><div class="catlist_level_top">
+						<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/dresses.html/"><img src="http://www.plazathemes.com/demo/ma_sagitta/media//catalog/category/cache/cat_resized/feature1-menu_1.jpg" alt="Dresses" />
+		                </a>
+				<h3>Dresses</h3>
+			</div><ul><li><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/dresses/girls.html/">Girls</a></li><li><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/dresses/women.html/">Women</a></li><li><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/dresses/kids-baby.html/">Kids & Baby</a></li><li><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/dresses/boys.html/">Boys</a></li></ul></div><div class='catgrid last col_4'><div class="catlist_level_top">
+						<a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/accessories-1.html/"><img src="http://www.plazathemes.com/demo/ma_sagitta/media//catalog/category/cache/cat_resized/feature2-menu_1.jpg" alt="Accessories" />
+		                </a>
+				<h3>Accessories</h3>
+			</div><ul><li><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/accessories-1/dresses.html/">Dresses</a></li><li><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/accessories-1/accessories.html/">Accessories</a></li><li><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/accessories-1/tops.html/">Tops</a></li><li><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/accessories-1/handbags.html/">Handbags</a></li></ul></div></div></div>
+</div>
+</div>
+</div>
+</div><div id="pt_menu_pt_item_menu_brands" class="pt_menu">
+<div class="parentMenu">
+<span class="block-title">Our&nbsp;Brands</span>
+</div>
+<div id="popup_pt_item_menu_brands" class="popup cmsblock" style="display: none; width: 904px;">
+<div class="arrow-menu" id="arrow-menu_pt_item_menu_brands">
+</div>
+<div class="box-menu" id="box-menu_pt_item_menu_brands">
+<div class="block2" id="block2_pt_item_menu_brands">
+<div class="static_block_brands">
+<div class="brands col">
+<div class="brands-images"><a href="#"><img src="http://www.plazathemes.com/demo/ma_sagitta/media/wysiwyg/cus-brands.png" alt="" /></a></div>
+<div class="brands-images1"><a href="#"><img src="http://www.plazathemes.com/demo/ma_sagitta/media/wysiwyg/cus1-brands.png" alt="" /></a></div>
+<div class="brands-images2"><a href="#"><img src="http://www.plazathemes.com/demo/ma_sagitta/media/wysiwyg/cus2-brands.png" alt="" /></a></div>
+<div class="brands-images3"><a href="#"><img src="http://www.plazathemes.com/demo/ma_sagitta/media/wysiwyg/cus3-brands.png" alt="" /></a></div>
+</div>
+<div class="brands col1">
+<div class="brands-images4"><a href="#"><img src="http://www.plazathemes.com/demo/ma_sagitta/media/wysiwyg/cus4-brands.png" alt="" /></a></div>
+<div class="brands-images5"><a href="#"><img src="http://www.plazathemes.com/demo/ma_sagitta/media/wysiwyg/cus5-brands.png" alt="" /></a></div>
+<div class="brands-images6"><a href="#"><img src="http://www.plazathemes.com/demo/ma_sagitta/media/wysiwyg/cus6-brands.png" alt="" /></a></div>
+<div class="brands-images7"><a href="#"><img src="http://www.plazathemes.com/demo/ma_sagitta/media/wysiwyg/cus7-brands.png" alt="" /></a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div id="pt_menu_pt_item_menu_block" class="pt_menu">
+<div class="parentMenu">
+<span class="block-title">Custom&nbsp;Menu</span>
+</div>
+<div id="popup_pt_item_menu_block" class="popup cmsblock" style="display: none; width: 904px;">
+<div class="arrow-menu" id="arrow-menu_pt_item_menu_block">
+</div>
+<div class="box-menu" id="box-menu_pt_item_menu_block">
+<div class="block2" id="block2_pt_item_menu_block">
+<div class="static_custom_block">
+<div class="menu-custom-block col">
+<div class="custom-block-title">
+<h2>CUSTOM BLOCK</h2>
+</div>
+<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit.</p>
+</div>
+<div class="menu-custom-block col1">
+<div class="custom-block-images"><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shirts.html"><img src="http://www.plazathemes.com/demo/ma_sagitta/media/wysiwyg/img-menu-cus.png" alt="" /></a></div>
+<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velitauct auctor aliquet.</p>
+<div class="cuttom-link"><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/shirts.html">View all features &raquo;</a></div>
+</div>
+<div class="menu-custom-block col2">
+<div class="custom-block-images"><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/pants.html"><img src="http://www.plazathemes.com/demo/ma_sagitta/media/wysiwyg/img1-menu-cus.png" alt="" /></a></div>
+<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velitauct auctor aliquet.</p>
+<div class="cuttom-link"><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/pants.html">View all features &raquo;</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div id="pt_menu_link" class="pt_menu">
+<div class="parentMenu">
+<ul>
+<li><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/bestsellerproductlist/">Sale products</a></li>
+<li><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/newproductlist">New products</a></li>
+<li><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/contacts/">Contact Us</a></li>
+<li><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/about-magento-demo-store">About us</a></li>
+</ul>
+</div>
+</div>        
+        <div class="clearBoth"></div>
+    </div>
+    </div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+var CUSTOMMENU_POPUP_EFFECT = 0;
+var CUSTOMMENU_POPUP_TOP_OFFSET = 79;
+//]]>
+</script>
+
+</div>
+
+                <div class="main-container col1-layout">
+            <div class="container">
+                <div class="container-inner">
+                    <div class="main">
+                                                <div class="col-main">
+                                                        	    <div class="ma-demo-wrap">
+		<h2 class="ma-demo-title">Theme Options</h2>
+		<div class="ma-demo-option">
+			<div class="cl-wrapper">
+				<div class="cl-container">
+					<div class="cl-table">
+						<div class="cl-tr cl-tr-style">
+							<div class="cl-td-l cl-td-layout1"><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/?___store=en" title="Teal_Magenta" ><span></span>Skin 1</a></div>
+							<div class="cl-td-r cl-td-layout2"><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/?___store=fr" title="Mustard_Fern"><span></span>Skin 2</a></div>
+						</div>
+						<div class="cl-tr cl-tr-style">
+							<div class="cl-td-r cl-td-layout3"><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/?___store=ge" title="SkyBlue_LavenderRose"><span></span>Skin 3</a></div>
+							<div class="cl-td-r cl-td-layout4"><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/?___store=au" title="AtomicTangerine_SkyBlue"><span></span>Skin 4</a></div>
+						</div>
+						<div class="cl-tr cl-tr-style">
+							<div class="cl-td-l cl-td-layout5"><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/?___store=br" title="Emeral_NeonCarrot"><span></span>Skin 5</a></div>
+							<div class="cl-td-r cl-td-layout6"><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/?___store=ie" title="FadedRed_Mustard"><span></span>Skin 6</a></div>
+						</div>
+					</div>
+                </div>		
+			</div>
+		</div>
+		<div class="control inactive"><a href="javascript:void(0)"></a></div>
+		<script type="text/javascript">
+			$jq(document).ready( function(){
+				$jq('.control').click(function(){
+					if($jq(this).hasClass('inactive')) {
+						$jq(this).removeClass('inactive');
+						$jq(this).addClass('active');
+						$jq('.ma-demo-wrap').animate({left:'0'}, 500);
+					} else {
+						$jq(this).addClass('inactive');
+						$jq('.ma-demo-wrap').animate({left:'-230px'}, 500);
+					}
+				});
+			});
+		</script>
+	</div>
+<script type="text/javascript">
+//<![CDATA[    
+    $jq('#bodyBackgroundColor,#mainColor, #linkColor').each(function() {
+        var $jqel = $jq(this);
+        /* set time */
+        var date = new Date();
+        date.setTime(date.getTime() + (1440 * 60 * 1000));
+    
+        $jqel.ColorPicker({
+            color: '#0000ff',
+            onChange: function (hsb, hex, rgb) {
+    
+                $jqel.find('div').css('backgroundColor', '#' + hex);
+                switch ($jqel.attr("id")) {			
+					
+                  case 'bodyBackgroundColor' :
+                    $jq("body").css('backgroundColor', '#' + hex);
+                    // set cookie
+                    $jq.cookie('body_background_cookie', hex , { expires: date });
+                    break;
+				// main color
+				  case 'mainColor' :
+					$jq('<style type="text/css">.ma-newproductslider-container .actions, .products-grid .actions, .ma-brand-slider-contain .flex-direction-nav a:hover, .ma-footer-static-container, .ma-nav-mobile-container, .ma-nav-container, .content-sample-block .block1 img, .productpage-sample-block .block2 img  { background-color:#'+hex+'}</style>').appendTo('head');
+					
+										$jq('<style type="text/css">.product-view button.btn-cart:hover span { background-color:#'+hex+' !important}</style>').appendTo('head');
+
+					
+					$jq('<style type="text/css">a:hover, .products-grid .product-name a:hover, .product-name a:hover { color:#'+hex+'}</style>').appendTo('head');
+					
+				  // set cookie
+				  $jq.cookie('main_color_cookie', hex , { expires: date });
+				  break;	
+				
+                  case 'linkColor' :
+                    //$jq("body a").css('color', '#' + hex);
+					$jq('<style type="text/css"> button.button span, .main button.btn-checkout:hover span, .header .form-search button.button:hover span, .ma-newproductslider-container .item-inner:hover .actions, .products-grid .item:hover .actions, .ma-brand-slider-contain .flex-direction-nav a, .ma-brand-slider-contain .flex-direction-nav .flex-next, .ma-new-vertscroller-wrap .jcarousel-next-vertical:hover, .ma-new-vertscroller-wrap .jcarousel-prev-vertical:hover, .add-to-cart input.qty-decrease:hover, .add-to-cart input.qty-increase:hover, .product-prev:hover, .product-next:hover, .ma-thumbnail-container .flex-direction-nav a:hover, .footer-freeshipping .shipping-icon, .wine_menu li.active a, .fish_menu li.active a, .wine_menu li.over a, .fish_menu li.over a, .wine_menu a:hover, .fish_menu a:hover, #back-top, .content-sample-block .block2 img, .productpage-sample-block .block1 img { background-color:#'+hex+'}</style>').appendTo('head');
+					
+					$jq('<style type="text/css"> button.btn-cart:hover span, .product-view button.btn-cart span, .ui-slider .ui-slider-range { background-color:#'+hex+' !important}</style>').appendTo('head');
+					
+					$jq('<style type="text/css"> a, .breadcrumbs li strong, .pager .pages a:hover, .pager .pages .current, .header .welcome-msg a, .header .currency-language .language-switcher a:hover, .header .links li a:hover, .top-cart-contain .price, .block .block-title strong .word2, .block-right-static .block-title strong, .block-subscribe-right .block-title strong, .block-account .block-content li a:hover, .block-account .block-content li.current, .block-layered-nav li:hover, .block-layered-nav li a:hover, .ma-featured-product-title h2 .word2, .ma-newproductslider-title h2 .word2, .products-list .product-name a:hover, .product-view .product-shop .availability span, .price-box .price, .regular-price, .regular-price .price, .block .regular-price, .block .regular-price .price, .special-price .price-label, .special-price .price, .add-to-cart .qty, .product-collateral h2 .word2, .product-view .product-shop .product-sku span, .product-view .product-shop .product-brand span, .product-view .product-shop .add-to-links a:hover, .email-friend a:hover, .ma-footer-static .fcol1 li:hover, .ma-footer-static .fcol1 li a:hover, .mobilemenu li.active a, .mobilemenu a:hover, #ticker a { color:#'+hex+'}</style>').appendTo('head');
+					
+					$jq('<style type="text/css"> .mobilemenu ul a:hover, .mobilemenu ul li.active a, .mobilemenu ul ul a:hover, .mobilemenu ul ul li.active a, .mobilemenu ul li.active ul a:hover, .mobilemenu ul ul ul a:hover, .mobilemenu ul ul ul li.active a, .mobilemenu ul ul li.active ul a:hover, .mobilemenu ul ul ul ul a:hover, .mobilemenu ul ul ul ul li.active a, .mobilemenu ul ul ul li.active ul a:hover, .wine_menu ul li a:hover, .wine_menu ul ul li a:hover, .fish_menu ul li a:hover { color:#'+hex+' !important}</style>').appendTo('head');
+					$jq('<style type="text/css">.ma-newproductslider-container .item-inner:hover, .ma-newproductslider-container .item-inner:hover, .product-tabs a:hover, .product-tabs li.active a, .product-tabs li.active a:hover, .wine_menu .container, .fish_menu ul, .fish_menu div, .fish_menu ul ul, .fish_menu ul div { border-color:#'+hex+'}</style>').appendTo('head');
+					
+                    // set cookie
+                    $jq.cookie('link_color_cookie', hex , { expires: date });
+                    break;			
+				
+                }
+            }
+        });
+    });
+    /* set time */
+    var date = new Date();
+    date.setTime(date.getTime() + (1440 * 60 * 1000));
+	
+			
+	$jq(document).ready(function(){
+		
+		//load selected font
+		$jq("#select-fontselector option").filter(function() {
+			//may want to use $.trim in here
+			return $jq(this).text() == $jq.cookie('font_cookie'); 
+		}).attr('selected', true);
+		//change font
+		$jq(function(){
+			fontSelect=$jq("#select-fontselector");
+			fontUpdate=function(){
+				curFont=$jq("#select-fontselector").val();
+				$jq(".page-title h1, .page-title h2, .block .block-title strong, .block-right-static .block-title h3, .block-subscribe-right .block-title h3, .ma-mostviewed-product-title h2, .ma-upsellslider-container .product-name, .ma-newproductslider-container .product-name, .products-grid .product-name, .ma-featured-product-title h2, .ma-newproductslider-title h2, .products-list .product-name, .product-collateral h2, .product-view .product-shop .product-name h1, .product-view .box-up-sell h2, .footer-freeshipping h3, .footer-subscribe .form-subscribe-header h4, .ma-footer-static .footer-static-title h3, .product-tabs a, .wine_menu a, .fish_menu a, .wine_menu ul li a ").css({ fontFamily: curFont });
+				//$jq("<link />",{href:"http://fonts.googleapis.com/css?family="+curFont,rel:"stylesheet",type:"text/css"}).appendTo("head");
+			}
+			fontSelect.change(function(){
+				fontUpdate();
+			}).keyup(function(){
+				fontUpdate();
+			}).keydown(function(){
+				fontUpdate();
+			});
+			
+			$jq("#select-fontselector").trigger("change");
+		})
+		
+		$jq('#select-fontselector').change(function() {
+			$jq.cookie('font_cookie', $jq(this).val(), { expires: date });
+		});
+		$jq(".page-title h1, .page-title h2, .block .block-title strong, .block-right-static .block-title h3, .block-subscribe-right .block-title h3, .ma-mostviewed-product-title h2, .ma-upsellslider-container .product-name, .ma-newproductslider-container .product-name, .products-grid .product-name, .ma-featured-product-title h2, .ma-newproductslider-title h2, .products-list .product-name, .product-collateral h2, .product-view .product-shop .product-name h1, .product-view .box-up-sell h2, .footer-freeshipping h3, .footer-subscribe .form-subscribe-header h4, .ma-footer-static .footer-static-title h3, .product-tabs a, .wine_menu a, .fish_menu a, .wine_menu ul li a").css({ fontFamily: $jq.cookie('font_cookie') }); 
+		//$jq("<link />",{href:"http://fonts.googleapis.com/css?family="+$jq.cookie('font_cookie'),rel:"stylesheet",type:"text/css"}).appendTo("head");
+		
+		//set cookie
+		$jq("body").css('backgroundColor', '#ffffff');
+		$jq("body").css('background-image', $jq.cookie('body_image_cookie'));
+		$jq("body").css('background-repeat','repeat');
+		
+		// main color
+
+		$jq('<style type="text/css">.ma-newproductslider-container .actions, .products-grid .actions, .ma-brand-slider-contain .flex-direction-nav a:hover, .ma-footer-static-container, .ma-nav-mobile-container, .ma-nav-container, .content-sample-block .block1 img, .productpage-sample-block .block2 img  { background-color:#'+$jq.cookie('main_color_cookie')+'}</style>').appendTo('head');
+		
+							$jq('<style type="text/css">.product-view button.btn-cart:hover span { background-color:#'+$jq.cookie('main_color_cookie')+' !important}</style>').appendTo('head');
+
+		
+		$jq('<style type="text/css">a:hover, .products-grid .product-name a:hover, .product-name a:hover { color:#'+$jq.cookie('main_color_cookie')+'}</style>').appendTo('head');
+					
+		
+		//link color
+		$jq('<style type="text/css">button.button span, .main button.btn-checkout:hover span, .header .form-search button.button:hover span, .ma-newproductslider-container .item-inner:hover .actions, .products-grid .item:hover .actions, .ma-brand-slider-contain .flex-direction-nav a, .ma-brand-slider-contain .flex-direction-nav .flex-next, .ma-new-vertscroller-wrap .jcarousel-next-vertical:hover, .ma-new-vertscroller-wrap .jcarousel-prev-vertical:hover, .add-to-cart input.qty-decrease:hover, .add-to-cart input.qty-increase:hover, .product-prev:hover, .product-next:hover, .ma-thumbnail-container .flex-direction-nav a:hover, .footer-freeshipping .shipping-icon, .wine_menu li.active a, .fish_menu li.active a, .wine_menu li.over a, .fish_menu li.over a, .wine_menu a:hover, .fish_menu a:hover, #back-top, .content-sample-block .block2 img, .productpage-sample-block .block1 img  { background-color:#'+$jq.cookie('link_color_cookie')+'}</style>').appendTo('head');
+		$jq('<style type="text/css"> button.btn-cart:hover span, .product-view button.btn-cart span, .ui-slider .ui-slider-range { background-color:#'+$jq.cookie('link_color_cookie')+' !important}</style>').appendTo('head');
+		
+		$jq('<style type="text/css">a, .breadcrumbs li strong, .pager .pages a:hover, .pager .pages .current, .header .welcome-msg a, .header .currency-language .language-switcher a:hover, .header .links li a:hover, .top-cart-contain .price, .block .block-title strong .word2, .block-right-static .block-title strong, .block-subscribe-right .block-title strong, .block-account .block-content li a:hover, .block-account .block-content li.current, .block-layered-nav li:hover, .block-layered-nav li a:hover, .ma-featured-product-title h2 .word2, .ma-newproductslider-title h2 .word2, .products-list .product-name a:hover, .product-view .product-shop .availability span, .price-box .price, .regular-price, .regular-price .price, .block .regular-price, .block .regular-price .price, .special-price .price-label, .special-price .price, .add-to-cart .qty, .product-collateral h2 .word2, .product-view .product-shop .product-sku span, .product-view .product-shop .product-brand span, .product-view .product-shop .add-to-links a:hover, .email-friend a:hover, .ma-footer-static .fcol1 li:hover, .ma-footer-static .fcol1 li a:hover, .mobilemenu li.active a, .mobilemenu a:hover, #ticker a  { color:#'+$jq.cookie('link_color_cookie')+'}</style>').appendTo('head');
+		$jq('<style type="text/css">.mobilemenu ul a:hover, .mobilemenu ul li.active a, .mobilemenu ul ul a:hover, .mobilemenu ul ul li.active a, .mobilemenu ul li.active ul a:hover, .mobilemenu ul ul ul a:hover, .mobilemenu ul ul ul li.active a, .mobilemenu ul ul li.active ul a:hover, .mobilemenu ul ul ul ul a:hover, .mobilemenu ul ul ul ul li.active a, .mobilemenu ul ul ul li.active ul a:hover, .wine_menu ul li a:hover, .wine_menu ul ul li a:hover, .fish_menu ul li a:hover { color:#'+$jq.cookie('link_color_cookie')+' !important}</style>').appendTo('head');
+		
+		$jq('<style type="text/css"> .ma-newproductslider-container .item-inner:hover, .ma-newproductslider-container .item-inner:hover, .product-tabs a:hover, .product-tabs li.active a, .product-tabs li.active a:hover, .wine_menu .container, .fish_menu ul, .fish_menu div, .fish_menu ul ul, .fish_menu ul div { border-color:#'+$jq.cookie('link_color_cookie')+'}</style>').appendTo('head');
+		
+		//set background image
+		$jq('.cl-pattern div').click(function(){
+			$jq("body").css('background-image', 'url(http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/ma_sagitta/magentothem/colortool/images/pattern/'+this.id+'.png)');
+			$jq("body").css('background-repeat','repeat');
+			$jq.cookie('body_image_cookie', 'url(http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/ma_sagitta/magentothem/colortool/images/pattern/'+this.id+'.png)', { expires: date });
+		});
+	
+		//set cookie for theme color
+		var cl = $jq(".cl-row-themeskin");
+		cl.find("a").each(function() {
+			$jq(this).click(function(){
+				$jq.cookie('style_color', $jq(this).attr('title') , { expires: date });
+				location.reload();
+			});
+		});
+	});
+		
+	
+    //reset button
+    $jq('.cl-reset').click(function(){
+		
+		$jq.cookie('font_cookie','');
+		$jq.cookie('main_color_cookie','');
+		$jq.cookie('link_color_cookie','');
+		
+        $jq.cookie('body_image_cookie','');	
+		$jq("body").css('background-image', 'url(http://www.plazathemes.com/demo/ma_sagitta/skin/frontend/default/ma_sagitta/magentothem/colortool/images/pattern/)');
+		
+        $jq.cookie('body_background_cookie','');
+        $jq("body").css('backgroundColor', '#');
+		location.reload();
+    });
+//]]>
+</script><div class="account-login">
+    <div class="page-title">
+        <h1>Login or Create an Account</h1>
+    </div>
+        <form action="http://www.plazathemes.com/demo/ma_sagitta/index.php/customer/account/loginPost/" method="post" id="login-form">
+        <input name="form_key" type="hidden" value="goVhgtQZv7PU43gf" />
+        <div class="col2-set">
+            <div class="col-1 new-users">
+                <div class="content">
+                    <h2>New Customers</h2>
+                    <p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
+                </div>
+            </div>
+            <div class="col-2 registered-users">
+                <div class="content">
+                    <h2>Registered Customers</h2>
+                    <p>If you have an account with us, please log in.</p>
+                    <ul class="form-list">
+                        <li>
+                            <label for="email" class="required"><em>*</em>Email Address</label>
+                            <div class="input-box">
+                                <input type="text" name="login[username]" value="" id="email" class="input-text required-entry validate-email" title="Email Address" />
+                            </div>
+                        </li>
+                        <li>
+                            <label for="pass" class="required"><em>*</em>Password</label>
+                            <div class="input-box">
+                                <input type="password" name="login[password]" class="input-text required-entry validate-password" id="pass" title="Password" />
+                            </div>
+                        </li>
+                                                                    </ul>
+                    <div id="window-overlay" class="window-overlay" style="display:none;"></div>
+<div id="remember-me-popup" class="remember-me-popup" style="display:none;">
+    <div class="remember-me-popup-head">
+        <h3>What's this?</h3>
+        <a href="#" class="remember-me-popup-close" title="Close">Close</a>
+    </div>
+    <div class="remember-me-popup-body">
+        <p>Checking &quot;Remember Me&quot; will let you access your shopping cart on this computer when you are logged out</p>
+        <div class="remember-me-popup-close-button a-right">
+            <a href="#" class="remember-me-popup-close button" title="Close"><span>Close</span></a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+    function toggleRememberMepopup(event){
+        if($('remember-me-popup')){
+            var viewportHeight = document.viewport.getHeight(),
+                docHeight      = $$('body')[0].getHeight(),
+                height         = docHeight > viewportHeight ? docHeight : viewportHeight;
+            $('remember-me-popup').toggle();
+            $('window-overlay').setStyle({ height: height + 'px' }).toggle();
+        }
+        Event.stop(event);
+    }
+
+    document.observe("dom:loaded", function() {
+        new Insertion.Bottom($$('body')[0], $('window-overlay'));
+        new Insertion.Bottom($$('body')[0], $('remember-me-popup'));
+
+        $$('.remember-me-popup-close').each(function(element){
+            Event.observe(element, 'click', toggleRememberMepopup);
+        })
+        $$('#remember-me-box a').each(function(element) {
+            Event.observe(element, 'click', toggleRememberMepopup);
+        });
+    });
+//]]>
+</script>
+                    <p class="required">* Required Fields</p>
+                </div>
+            </div>
+        </div>
+        <div class="col2-set">
+            <div class="col-1 new-users">
+                <div class="buttons-set">
+                    <button type="button" title="Create an Account" class="button" onclick="window.location='http://www.plazathemes.com/demo/ma_sagitta/index.php/customer/account/create/';"><span><span>Create an Account</span></span></button>
+                </div>
+            </div>
+            <div class="col-2 registered-users">
+                <div class="buttons-set">
+                    <a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/customer/account/forgotpassword/" class="f-left">Forgot Your Password?</a>
+                    <button type="submit" class="button" title="Login" name="send" id="send2"><span><span>Login</span></span></button>
+                </div>
+            </div>
+        </div>
+            </form>
+    <script type="text/javascript">
+    //<![CDATA[
+        var dataForm = new VarienForm('login-form', true);
+    //]]>
+    </script>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                    <div class="container">
+    <div class="container-inner">
+	<div class="ma-brand-slider-contain">
+    		<div class="brand-title"><h2>Our Brand</h2></div>
+          	<ul class="bxslider">
+				                    <li class="item">						    																																		    							<a href="#" title=""><img src="http://www.plazathemes.com/demo/ma_sagitta/media/magentothem/brandslider/bg-brand.png" alt="" /></a>												
+																																							             
+                                            </li>
+				                    <li class="item">						    																																		    							<a href="#" title=""><img src="http://www.plazathemes.com/demo/ma_sagitta/media/magentothem/brandslider/bg1-brand.png" alt="" /></a>												
+																																							             
+                                            </li>
+				                    <li class="item">						    																																		    							<a href="#" title=""><img src="http://www.plazathemes.com/demo/ma_sagitta/media/magentothem/brandslider/bg2-brand.png" alt="" /></a>												
+																																							             
+                                            </li>
+				                    <li class="item">						    																																		    							<a href="#" title=""><img src="http://www.plazathemes.com/demo/ma_sagitta/media/magentothem/brandslider/bg3-brand.png" alt="" /></a>												
+																																							             
+                                            </li>
+				                    <li class="item">						    																																		    							<a href="#" title=""><img src="http://www.plazathemes.com/demo/ma_sagitta/media/magentothem/brandslider/bg4-brand.png" alt="" /></a>												
+																																							             
+                                            </li>
+				                    <li class="item">						    																																		    							<a href="#" title=""><img src="http://www.plazathemes.com/demo/ma_sagitta/media/magentothem/brandslider/bg5-brand.png" alt="" /></a>												
+																																							             
+                                            </li>
+				            </ul>
+            <script type="text/javascript">
+			       //<![CDATA[
+					$jq(document).ready(function(){
+					  $jq('.ma-brand-slider-contain .bxslider').bxSlider(
+						{
+												  speed: 4000,
+						  pause: 600,
+						  minSlides: 1,
+						  maxSlides: 10,
+						  slideWidth: 170,
+						  slideMargin:25,
+					      
+						  pager:false, 
+																			controls: true,
+												moveSlides: 2
+						}
+					  );
+					});
+				//]]>
+				</script>
+	</div>
+    </div>
+</div> <div class="footer-static-container">
+    <div class="container">
+        <div class="footer-static row">
+            <div class="f-col col-sm-6 col-md-3 col-sms-6 col-smb-12">
+<div class="footer-static-title f-title1">
+<h3>TESTIMONIALS</h3>
+</div>
+<div class="footer-static-content">
+<p>&ldquo; This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum &rdquo;</p>
+<div class="f-name">
+<p>- Danielle Sharp -</p>
+</div>
+</div>
+</div>
+<div class="f-col f-col2 col-sm-6 col-md-2 col-sms-6 col-smb-12">
+<div class="footer-static-title f-title2">
+<h3>MY ACCOUNT</h3>
+</div>
+<div class="footer-static-content row-fluid">
+<ul>
+<li class="first"><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/catalog/seo_sitemap/category">Sitemap</a></li>
+<li><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/privacy-policy-cookie-restriction-mode">Privacy Policy</a></li>
+<li><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/customer/account/index">Your Account</a></li>
+<li><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/catalogsearch/advanced">Advanced Search</a></li>
+<li class="last"><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/contacts">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="f-col f-col3 col-sm-6 col-md-2 col-sms-6 col-smb-12">
+<div class="footer-static-title f-title3">
+<h3>INFORMATION</h3>
+</div>
+<div class="footer-static-content">
+<ul>
+<li class="first"><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/customer/account/index/">My Account</a></li>
+<li><a href="sales/order/history/">Order History</a></li>
+<li><a href="#">Returns</a></li>
+<li><a href="#">Specials</a></li>
+<li class="last"><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/catalog/seo_sitemap/category">Site Map</a></li>
+</ul>
+</div>
+</div>
+<div class="f-col f-col3 col-sm-6 col-md-2 col-sms-6 col-smb-12">
+<div class="footer-static-title f-title4">
+<h3>WHY BUY FROM US</h3>
+</div>
+<div class="footer-static-content">
+<ul>
+<li class="first"><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/catalog/seo_sitemap/category">Site Map</a></li>
+<li><a href="#">Specials</a></li>
+<li><a href="#">Returns</a></li>
+<li><a href="sales/order/history/">Order History</a></li>
+<li class="last"><a href="http://www.plazathemes.com/demo/ma_sagitta/index.php/customer/account/index/">My Account</a></li>
+</ul>
+</div>
+</div>
+<div class="f-col f-col4 col-sm-12 col-md-3">
+<div class="footer-static-title f-title5">
+<h3>ABOUT US</h3>
+</div>
+<div class="footer-static-content">
+<div class="f-adress">
+<p>8901 Marmora Road, Glasgow, D04 89GR</p>
+</div>
+<div class="f-phone">
+<p>Telephone: (801) 2345 - 6789</p>
+</div>
+<div class="f-email">
+<p>E-mail: support@plazathemes.com</p>
+</div>
+<div class="f-payment"><img src="http://www.plazathemes.com/demo/ma_sagitta/media/wysiwyg/payment.png" alt="" /></div>
+</div>
+</div>        </div>
+    </div>
+</div>
+<div class="ma-footer-container">
+    <div class="container">
+        <div class="footer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <address>Copyright © 2014 <a href="http://www.plazathemes.com/">Plazathemes</a>. All rights Reserved.</address>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="box-footer">
+                                        <div class="f-images">
+                    
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div id="back-top" class="hidden-xs"></div>
+        </div>
+    </div>
+</div>
+
+
+    <script type="text/javascript">
+
+            jQuery('.selectpicker').selectpicker({
+                'selectedText': 'cat'
+            });
+
+    </script>
+                
+
+<div id ="ajaxconfig_info" style ="display:none">
+<a href ="http://www.plazathemes.com/demo/ma_sagitta/index.php/"></a>
+<div ><img src ="http://www.plazathemes.com/demo/ma_sagitta/media/theme/default/loader_1.gif" alt ="Loading Image" /></div>
+<button name ="#000000" value ="0.7" ></button>
+<input type="hidden" value =""/>
+<input type="hidden" id="enable_module" value ="1"/>
+<input class="effect_to_cart" type="hidden" value ="1"/>
+<input class="title_shopping_cart" type="hidden" value ="Go to shopping cart"/>
+<input class="title_shopping_continue" type="hidden" value ="Continue Shopping"/>
+<input class="title_shopping_wishlist" type="hidden" value ="Go to wishlist"/>
+<input class="title_shopping_compare" type="hidden" value ="Go to list Compare"/>
+<input class="confirm_delete_product" type="hidden" value ="Are you sure you would like to remove this item ?"/>
+<input class="title_add_to_cart" type="hidden" value ="Item was successfully added to your cart"/>
+<input class="title_add_to_wishlist" type="hidden" value ="Item was successfully added to your wishlist"/>
+<input class="title_add_to_compare" type="hidden" value ="Item was successfully added to your compare"/>
+<input class="using_ssl" type="hidden" value ="0"/>
+
+
+</div>
+<div id="ajaxcart-checkout-content" style="display:none;"></div>
+<div id ="productHaveOption"  style="display:block;" ></div>    </div>
+</div>
+</body>
+</html>
