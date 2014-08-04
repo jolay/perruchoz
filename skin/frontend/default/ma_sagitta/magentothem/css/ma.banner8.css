@@ -23,7 +23,7 @@
 *********************************/ 
 .ma-banner8-container .flexslider {margin: 0; padding: 0;}
 .ma-banner8-container .flexslider .slides > li {display: none; -webkit-backface-visibility: hidden; position: relative; } /* Hide the slides before the JS is loaded. Avoids image jumping */
-.ma-banner8-container .flexslider .slides img {width: 100%; display: block;}
+.ma-banner8-container .flexslider .slides img {width: auto; display: block;}
 .ma-banner8-container .flex-pauseplay span {text-transform: capitalize;}
 
 /* Clearfix for the .slides element */
