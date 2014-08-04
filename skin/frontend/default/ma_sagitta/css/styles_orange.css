@@ -418,7 +418,7 @@ button.button:hover span {background:none; color: #74d580;}
 button.button:hover span span { padding: 0; color: #74d580;}
 button.disabled span { border-color:#bbb !important; background:#bbb !important; }
 
-button.btn-cart span { background:none; border:0; line-height: 19px; padding:0; color: #777; font-size:16px;  font-weight: normal; font-family: 'titilliumwebsemibold';}
+button.btn-cart span { background:none; border:0; line-height: 28px; padding:0; color: #777; font-size:16px;  font-weight: normal; font-family: 'titilliumwebsemibold';}
 button.btn-cart span span { background: none;}
 button.btn-cart:hover span { background:none; color: #74d580;}
 button.btn-cart:hover span span { background: none;}
@@ -2989,7 +2989,7 @@ p.welcome-msg { margin: 0; line-height: 50px; text-align: center; display: inlin
     display: inline-block;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
 }
 .product-name a { color:#777; font-family: 'titilliumwebregular'; font-size:14px; text-transform:capitalize; }
 .product-name a:hover { color: #74d580; text-decoration: none;}

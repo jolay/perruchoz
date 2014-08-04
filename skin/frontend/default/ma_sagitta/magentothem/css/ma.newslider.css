@@ -43,7 +43,7 @@
 .ma-newproductslider-container .item-inner .item-box-hover {
 	opacity: 0;
 	padding: 10px 0;
-	background-color: #fff;
+	background-color:#FFFFFF;
 	transition: 0.25s ease-out;
 	-moz-transition: 0.25s ease-out;
 	-webkit-transition: 0.25s ease-out;
@@ -78,7 +78,8 @@
 	margin: 3px 0 0;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	white-space: nowrap;
+	/*white-space: nowrap;*/
+	text-align: center; height: 65px;
 }
 /** THEME
 ===================================*/
@@ -87,7 +88,7 @@
 	left:0;
 	margin: 26px 0 0;
 	padding:0;
-	min-height: 300px;
+	min-height: 250px;
 	float: left;
 }
 .ma-newproductslider-container {
@@ -95,6 +96,7 @@
     min-height: 200px;
     display: inline-block;
     width: 100%;
+    background: #e0e0e0;
 }
 .ma-newproductslider-container .ma-newproductslider-title {
 	background: url("../images/bg-bottom1-title.png") repeat-x scroll left bottom rgba(0, 0, 0, 0);
@@ -183,7 +185,7 @@
 	height: 42px;
 	position: absolute;
 	text-indent: -9999px;
-	top:170px;
+	top:102px;
 	width: 40px;
 	opacity: 0.7;
 }
