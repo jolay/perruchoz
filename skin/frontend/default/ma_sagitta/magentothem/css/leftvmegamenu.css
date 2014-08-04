@@ -1,9 +1,9 @@
 .pt_vmegamenu {
     font-size: 14px;
-    margin: 0 0 33px;
+    margin:0;
     padding:0;
-    z-index: 1000;
-    border-bottom: 1px solid #f1f1f1;
+    z-index: 1000;/*
+    border-bottom: 1px solid #f1f1f1;*/
     border-left: 1px solid #f1f1f1;
     border-right: 1px solid #f1f1f1;
     border-radius: 0 0 5px 5px;
@@ -54,11 +54,11 @@
     display:block;
     line-height: 21px;
     padding: 18px 30px 18px 27px;
-    border-left: 4px solid #fff;
+    border-left: 4px solid #ededed;
     font-size: 16px;
     color: #777777;
     font-family: 'titilliumwebsemibold';
-    background:url("../images/bg-left-menu.png") no-repeat 90% 50% #fff;
+    background:url("../images/bg-left-menu.png") no-repeat 90% 50% transparent;
     text-transform: uppercase;
     
 }
@@ -86,7 +86,7 @@
 .m-images { float: left;}
 .m-images.col1 { margin:20px 0 0;}
 .pt_vmegamenu div.pt_menu .parentMenu {
-    border-bottom: 1px solid #f1f1f1;
+    border-bottom: 1px solid #dedede;
 }
 .pt_vmegamenu div.pt_menu .parentMenu.noSubMenu{
     padding: 0 0 1px;

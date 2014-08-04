@@ -880,10 +880,10 @@ h3 {
   transition-duration: 1.8s;
 }
 .link-slider3.subtitle-slider3 a {
-    background:url("images/icon-subtitle.png") no-repeat 80% 53% #b4a8a0;
-    border-bottom: 3px solid #9a8f88;
+    background:#d34b2d;
+    border-bottom: 3px solid #b93c20;
     border-radius: 5px;
-    color: #fff;
+    color: #FFFFFF;
     text-shadow: none;
     display: inline-block;
     font-size: 12px;
@@ -897,10 +897,10 @@ h3 {
     border-bottom: 3px solid #818C95;
 }
 .animate-in .link-slider3 a {
-    background:url("images/icon-subtitle.png") no-repeat 80% 53% #b4a8a0;
+    background:#d34b2d;
 }
 .animate-out .link-slider3 a {
-    background:url("images/icon-subtitle.png") no-repeat 80% 53% #b4a8a0;
+    background:#d34b2d;
 }
 .subtitle-slider3.intro-slider3 {
   left:-300px;
